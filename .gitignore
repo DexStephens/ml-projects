@@ -1,0 +1,63 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+credentials.json
+secrets.json
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# PyTorch / ML artifacts
+data/
+datasets/
+checkpoints/
+models/
+runs/
+wandb/
+mlruns/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tflite
+
+# Generated media and local captures
+captures/
+frames/
+recordings/
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+.vscode/.ropeproject/
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
