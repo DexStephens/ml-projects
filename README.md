@@ -24,7 +24,7 @@ computer-vision/
 | Project | Path | Description |
 |---------|------|-------------|
 | FashionMNIST Classifier | [`projects/fashion_mnist/`](projects/fashion_mnist/) | Datasets, transforms, dataloaders, model layers, inference |
-| AI Security Camera | [`projects/security_camera/`](projects/security_camera/) | End-to-end Pi + inference server architecture (plan) |
+| AI Security Camera | [`projects/security_camera/`](projects/security_camera/) | Pi + inference server architecture; synthetic OpenCV motion demo |
 
 ## Learnings
 

@@ -148,6 +148,28 @@ Example Technologies:
 - Background subtraction
 - Image differencing
 
+### Step 2 learning demo: synthetic motion
+
+Before using a real camera, run [`synthetic_motion_demo.py`](synthetic_motion_demo.py) to reverse engineer frame differencing with known ground truth.
+
+The script:
+
+1. Builds a blank grayscale scene
+2. Draws a bright rectangle (synthetic “person”) that moves each frame
+3. Adds Gaussian noise
+4. Compares consecutive frames with `cv2.absdiff`, thresholds the diff, and finds contours
+5. Prints ground-truth box vs detected motion boxes per frame
+
+```bash
+# From repo root (after uv sync)
+uv run python projects/security_camera/synthetic_motion_demo.py
+
+# Optional: visualize frame + diff mask (press q to quit)
+uv run python projects/security_camera/synthetic_motion_demo.py --show
+```
+
+Tune constants at the top of the script (`DIFF_THRESHOLD`, `MIN_CONTOUR_AREA`, `NOISE_STD`, etc.) to see how sensitivity changes.
+
 ---
 
 ## Component 3: API Client
