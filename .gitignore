@@ -54,8 +54,7 @@ recordings/
 # OS/editor noise
 .DS_Store
 Thumbs.db
-.vscode/settings.json
-.vscode/.ropeproject/
+.vscode/
 
 # Logs and temporary files
 *.log
